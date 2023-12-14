@@ -21,9 +21,10 @@ for(let n = 1; n < 10; n++){
 
 let strikes = 0;
 let balls = 0;
-let count = 1;
+let count = 0;
 
 while (strikes < 3) {
+    count++
     let userInput = prompt("숫자 3개를 입력해 주세요 (중복되지 않는 1~9 사이의 숫자):");
     let userNumbers = userInput.split('').map(Number);
     console.log(`${count}번째 시도 : ${userNumbers}`);
@@ -39,7 +40,7 @@ while (strikes < 3) {
         }
     }
 
-    count++
+    
 
     console.log(`Strikes: ${strikes}, Balls: ${balls}`);
 
